@@ -58,7 +58,7 @@ const Home: React.FC = () => {
       link: '/creative-works',
       category: 'Event Direction',
       year: '2022-2024',
-      accolades: 'Over 5,000 attendees annually'
+      accolades: 'Over 500 attendees'
     },
     {
       id: 3,
@@ -72,13 +72,7 @@ const Home: React.FC = () => {
     }
   ];
 
-  // Stats Section Data
-  const stats = [
-    { value: '10+', label: 'Years Experience' },
-    { value: '50+', label: 'Projects Completed' },
-    { value: '25+', label: 'Academic Publications' },
-    { value: '12', label: 'Industry Awards' }
-  ];
+
 
   // Animation for section headers
   const controls = useAnimation();
