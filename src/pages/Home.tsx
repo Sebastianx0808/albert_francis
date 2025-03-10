@@ -52,7 +52,7 @@ const Home: React.FC = () => {
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      image: '/MacGuffin.jpg',
       title: 'MacGuffin International Film Festival',
       description: 'I co-directed this large-scale festival, featuring short films, workshops, and industry talks that I helped organize and promote.',
       link: '/creative-works',
