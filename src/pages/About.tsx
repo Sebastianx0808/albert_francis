@@ -45,7 +45,7 @@ const About: React.FC = () => {
           >
             <div className="relative group">
               <img 
-                src="" 
+                src="/albert-francis.jpeg" 
                 alt="Profile" 
                 className="w-full rounded-xl shadow-lg object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -98,13 +98,13 @@ const About: React.FC = () => {
               <a href="#" className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 transition-colors duration-200">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/albert-francis-a43010137" className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 transition-colors duration-200">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 transition-colors duration-200">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 transition-colors duration-200">
+              <a href="albertfrancis95@gmail.com" className="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center text-indigo-600 dark:text-indigo-400 hover:bg-indigo-200 dark:hover:bg-indigo-800/50 transition-colors duration-200">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -112,7 +112,7 @@ const About: React.FC = () => {
             {/* Download CV Button */}
             <div className="mt-8">
               <a 
-                href="#" 
+                href="/albert-francis-resume.pdf" 
                 className="group w-full flex items-center justify-center py-3 px-6 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-700 hover:to-indigo-600 text-white font-medium shadow-sm hover:shadow-indigo-500/30 transition-all duration-300"
               >
                 Download CV 

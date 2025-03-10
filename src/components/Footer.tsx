@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/albert-francis-a43010137" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:contact@example.com" 
+                href="mailto:albertfrancis95@gmail.com" 
                 className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                 aria-label="Email"
               >
@@ -91,16 +91,17 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-4 text-gray-900 dark:text-white">Contact</h3>
             <address className="not-italic">
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                123 Academic Avenue
+                Yuva Vikas, Balaji Nagar
+                
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                Research City, RC 10101
+                Sadduguntepalya, Bengaluru, Karnataka,India
               </p>
               <p className="text-gray-600 dark:text-gray-400 mb-2">
-                contact@example.com
+                albertfrancis95@gmail.com
               </p>
               <p className="text-gray-600 dark:text-gray-400">
-                +1 (555) 123-4567
+                +91 9747197225
               </p>
             </address>
           </div>

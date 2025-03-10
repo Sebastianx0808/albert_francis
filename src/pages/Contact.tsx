@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/albert-francis-a43010137" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 bg-gray-100 dark:bg-dark-300 rounded-full text-gray-700 dark:text-gray-300 hover:bg-primary-100 dark:hover:bg-primary-900 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
@@ -114,28 +114,6 @@ const Contact: React.FC = () => {
               </div>
             </div>
             
-            <div className="mt-8 p-6 bg-gray-50 dark:bg-dark-300 rounded-lg">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-                Office Hours
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
-                Available for meetings and consultations during the following hours:
-              </p>
-              <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-                <li className="flex justify-between">
-                  <span>Monday - Friday:</span>
-                  <span>9:00 AM - 5:00 PM</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Saturday:</span>
-                  <span>By appointment</span>
-                </li>
-                <li className="flex justify-between">
-                  <span>Sunday:</span>
-                  <span>Closed</span>
-                </li>
-              </ul>
-            </div>
           </motion.div>
           
           {/* Contact Form */}
