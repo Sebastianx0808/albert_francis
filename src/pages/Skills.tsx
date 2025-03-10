@@ -124,8 +124,8 @@ const Skills: React.FC = () => {
               onClick={() => setActiveCategory(category.id)}
               className={`px-4 py-2 rounded-full flex items-center gap-2 transition-all ${
                 activeCategory === category.id
-                  ? 'bg-primary-600 text-white dark:bg-primary-500'
-                  : 'bg-light-200 text-dark-700 hover:bg-light-300 dark:bg-dark-700 dark:text-light-200 dark:hover:bg-dark-600'
+                  ? 'bg-primary-600 text-white dark:bg-primary-500 dark:text-white'
+                  : 'bg-light-600 text-dark-700 hover:bg-light-300 dark:bg-dark-600 dark:text-light-100 dark:hover:bg-dark-500'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}

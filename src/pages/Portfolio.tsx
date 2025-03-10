@@ -60,7 +60,7 @@ const Portfolio: React.FC = () => {
       description:
         "A deep dive into postmodern film theory, analyzing Premam's use of pastiche, nostalgia, and non-linear storytelling.",
       image:
-        "https://images.unsplash.com/photo-1574717024453-354056adc7e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        "Premam.JPG",
       tags: ["research", "film"],
       link: "#",
       repoLink: "https://github.com/username/premam-analysis",

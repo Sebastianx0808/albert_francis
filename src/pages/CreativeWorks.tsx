@@ -18,7 +18,7 @@ const CreativeWorks: React.FC = () => {
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80',
+      image: '/MacGuffin.jpg',
       title: 'MacGuffin International Film Festival',
       description: 'I co-directed this large-scale festival, featuring short films, workshops, and industry talks that I helped organize and promote.'
     },
@@ -60,7 +60,7 @@ const CreativeWorks: React.FC = () => {
       role: 'Director & Organising Committee Chairman',
       description:
         'Planned and executed a large-scale film festival featuring short films, all-India photography contests, and master classes from New York Film Academy professionals. Promoted emerging filmmakers, with Albert overseeing budgets, scheduling, and overall creative direction.',
-      image: 'https://images.unsplash.com/photo-1572451472621-f0b8e06c2c13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+      image: 'MacGuffin.jpg',
       link: '#'
     },
     {
