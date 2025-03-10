@@ -45,7 +45,7 @@ const About: React.FC = () => {
           >
             <div className="relative group">
               <img 
-                src="sebastian_photo.jpg" 
+                src="" 
                 alt="Profile" 
                 className="w-full rounded-xl shadow-lg object-cover transition-transform duration-500 group-hover:scale-105"
               />
