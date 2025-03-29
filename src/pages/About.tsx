@@ -147,6 +147,7 @@ const About: React.FC = () => {
                 
                 <p className="leading-relaxed">
                   My research focuses on the intersection of emerging technologies, digital media, digital tools, and media ethics. I have published books and presented my work at international conferences. I am an adjunct faculty member and research assistant at CHRIST (Deemed To Be University), Bangalore.
+                </p>
                 
                 <div className="relative p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border-l-4 border-indigo-500 my-6">
                   <p className="italic text-indigo-800 dark:text-indigo-300">
