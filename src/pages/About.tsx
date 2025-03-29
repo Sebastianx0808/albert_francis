@@ -142,26 +142,25 @@ const About: React.FC = () => {
               
               <div className="space-y-4 text-gray-700 dark:text-gray-300">
                 <p className="leading-relaxed">
-                  I am a multidisciplinary professional with expertise spanning academic research, digital media production, and creative direction. With a PhD in Media Studies and over a decade of experience in both academic and creative fields, I bring a unique perspective that bridges theory and practice.
+                  I am a multidisciplinary professional with expertise spanning academic research, digital media production, and creative direction. As a PhD scholar in Media Studies with experience in academic and creative fields, I bring a unique perspective that bridges theory and practice.
                 </p>
                 
                 <p className="leading-relaxed">
-                  My research focuses on the intersection of emerging technologies, digital culture, and media ethics. I have published numerous papers in peer-reviewed journals and presented my work at international conferences. As a visiting professor, I have taught courses on media theory, digital storytelling, and creative production at several prestigious universities.
-                </p>
+                  My research focuses on the intersection of emerging technologies, digital media, digital tools, and media ethics. I have published books and presented my work at international conferences. I am an adjunct faculty member and research assistant at CHRIST (Deemed To Be University), Bangalore.
                 
                 <div className="relative p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border-l-4 border-indigo-500 my-6">
                   <p className="italic text-indigo-800 dark:text-indigo-300">
-                    "My goal is to bridge the gap between theoretical understanding and practical application in media studies, creating work that is both intellectually rigorous and creatively engaging."
+                    "My goal is to bridge the gap between theoretical understanding and practical application of AI with arts and humanities and social sciences, creating intellectually rigorous and creatively engaging work."
                   </p>
                   <div className="absolute -top-2 -right-2 h-8 w-8 bg-amber-300 rounded-full opacity-50 blur-md"></div>
                 </div>
                 
                 <p className="leading-relaxed">
-                  Beyond academia, I am an active practitioner in the creative arts. My work includes experimental documentaries, interactive installations, and multimedia performances that have been exhibited at galleries and festivals worldwide. I am particularly interested in projects that challenge conventional boundaries between disciplines and explore new forms of storytelling.
+                  Beyond academia, I am an active practitioner in the creative arts. My work includes music production, AV production, and multimedia performances. I am particularly interested in projects that challenge conventional boundaries between disciplines.
                 </p>
                 
                 <p className="leading-relaxed">
-                  I regularly conduct workshops and masterclasses on digital media production, creative research methodologies, and interdisciplinary approaches to storytelling. These educational initiatives aim to empower the next generation of media practitioners and researchers with both theoretical knowledge and practical skills.
+                  I regularly conduct workshops and masterclasses on digital media and tools, AI tools for education, integration of AI in arts and humanities and social sciences with creative research methodologies, and interdisciplinary approaches. These educational initiatives aim to empower the next generation of students and researchers with both theoretical knowledge and practical skills.
                 </p>
               </div>
             </motion.div>
