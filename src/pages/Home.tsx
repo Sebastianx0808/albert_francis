@@ -412,7 +412,7 @@ const Home: React.FC = () => {
               Get in Touch <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link 
-              to="/about" 
+              to="/*" 
               className="btn border-2 border-white/80 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
             >
               Learn About Me
