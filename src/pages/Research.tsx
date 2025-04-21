@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, FileText, BookMarked, Layers, Film, Search } from 'lucide-react';
+import { BookOpen, FileText, BookMarked, Layers, Search } from 'lucide-react';
 import PageTransition from '../components/PageTransition';
 import SectionHeading from '../components/SectionHeading';
 import ResearchCard from '../components/ResearchCard';
@@ -12,87 +12,196 @@ const Research: React.FC = () => {
   
   const categories = [
     { id: 'all', name: 'All Publications', icon: <BookOpen className="w-5 h-5" /> },
-    { id: 'papers', name: 'Journal Articles', icon: <FileText className="w-5 h-5" /> },
-    { id: 'books', name: 'Books & Chapters', icon: <BookMarked className="w-5 h-5" /> },
-    { id: 'projects', name: 'Research Projects', icon: <Layers className="w-5 h-5" /> },
-    { id: 'film', name: 'Film Studies & Analysis', icon: <BookMarked className="w-5 h-5" /> }
+    { id: 'books', name: 'Books', icon: <BookMarked className="w-5 h-5" /> },
+    { id: 'projects', name: 'Projects', icon: <Layers className="w-5 h-5" /> },
+    { id: 'analysis', name: 'Thematic Analysis', icon: <FileText className="w-5 h-5" /> }
   ];
   
   const researchItems = [
     {
       id: 1,
-      category: 'papers',
-      title: 'Transforming Traditional Classrooms in Higher Education Using AI',
-      authors: 'Albert Francis, Dr. Kennedy Andrew Thomas, Dr. Fr. Varghese K J, Dr. Sangeetha R',
+      category: 'books',
+      title: 'Echoes of the Soul: The Timeless Wisdom of Kahlil Gibran',
+      authors: 'Albert Francis',
       date: '2024',
-      journal: 'Education and AI Review',
-      abstract: 'This paper explores how AI-driven pedagogical tools transform higher education, improving student engagement through automated learning environments. The study provides empirical analysis from university implementations, discussing the benefits and challenges of AI in modern classrooms.',
-      link: '#'
+      journal: 'Amazon KDP',
+      abstract: 'An exploration of Kahlil Gibran\'s philosophical insights and timeless wisdom that continues to inspire generations worldwide.',
+      link: 'https://www.amazon.in/dp/B0DSJMKK5R'
     },
     {
       id: 2,
-      category: 'papers',
-      title: 'Cultural Factors and Cognitive Processes in Higher Education',
-      authors: 'Albert Francis, Dr. Kennedy Andrew Thomas',
-      date: '2023',
-      journal: 'Journal of Higher Education Studies',
-      abstract: 'This research examines how cultural influences shape cognitive learning strategies, with a focus on international education models. It offers insights into classroom diversity, language barriers, and the role of institutional culture in shaping student outcomes.',
-      link: '#'
+      category: 'books',
+      title: 'Foundations of Research: Philosophical Insights, Methods, and Applications',
+      authors: 'Albert Francis',
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'A comprehensive guide to research methodologies, philosophical foundations, and practical applications for academic and professional researchers.',
+      link: 'https://kdp.amazon.com/amazon-dp-action/in/dualbookshelf.marketplacelink/B0DSK3BD6P'
     },
     {
       id: 3,
       category: 'books',
-      title: 'Education: Navigating Through Transformation and Shift',
-      authors: 'Edited by Dr. Kennedy Andrew Thomas, Contributions by Albert Francis',
-      date: '2023',
-      journal: 'Academic Press',
-      abstract: 'A comprehensive examination of the changing dynamics in education, including AI intervention, pedagogical innovation, and institutional transformation. Albert Francis contributed a chapter on AI’s role in reshaping higher education.',
-      link: '#'
+      title: 'Remote Work Success: A Comprehensive Guide to Thriving in the Digital Workplace',
+      authors: 'Albert Francis',
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'Strategic approaches and practical tips for professionals adapting to and excelling in remote work environments.',
+      link: 'https://www.amazon.in/dp/B0DVQ3PB79'
     },
     {
       id: 4,
-      category: 'projects',
-      title: 'Leading by Influence: Impact on Faculty & Academic Culture',
-      authors: 'Albert Francis, Dr. Kennedy Andrew Thomas, Research Team',
-      date: '2024-Present',
-      journal: 'CHRIST University Research Initiative',
-      abstract: 'This project analyzes faculty leadership’s role in shaping institutional culture, academic integrity, and student success. Through qualitative and quantitative methods, the research provides an extensive understanding of faculty influence in higher education.',
-      link: '#'
+      category: 'books',
+      title: 'The Collected Works of Kahlil Gibran: A Journey Through the Soul',
+      authors: 'Albert Francis',
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'A curated collection of Kahlil Gibran\'s most profound works, offering readers a spiritual journey through his timeless philosophy.',
+      link: 'https://www.amazon.in/dp/B0DVDG7MRJ'
     },
     {
       id: 5,
-      category: 'film',
-      title: 'Screenplay Development in Interstellar (2014)',
+      category: 'books',
+      title: 'The Exposure Triangle Explained',
       authors: 'Albert Francis',
-      date: '2023',
-      journal: 'Film Studies Journal',
-      abstract: 'An in-depth study of Christopher Nolan’s screenplay techniques, exploring narrative complexity, time dilation mechanics, and emotional engagement in Interstellar. The research analyzes how the screenplay blends science and storytelling for an immersive cinematic experience.',
-      link: '#'
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'A practical guide demystifying the fundamental relationship between aperture, shutter speed, and ISO in photography.',
+      link: 'https://www.amazon.in/dp/B0DSK2FVSB'
     },
     {
       id: 6,
-      category: 'film',
-      title: 'Narratology and the Author Theory in Yeh Jawaani Hai Deewani (2013)',
+      category: 'books',
+      title: 'AI for Students: Leveraging Artificial Intelligence for Enhanced Learning, Effective Assignments, and Successful Thesis Writing',
       authors: 'Albert Francis',
-      date: '2022',
-      journal: 'Cinema & Literature Review',
-      abstract: 'Examining Ayan Mukerji’s directorial vision through auteur theory, this study analyzes how personal experiences influence film narratives. The research delves into character arcs, thematic storytelling, and cinematic nostalgia.',
-      link: '#'
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'A student-focused guide on effectively utilizing AI tools to improve academic performance and research outcomes.',
+      link: 'https://www.amazon.in/dp/B0F1KY7KLV'
     },
     {
       id: 7,
-      category: 'film',
-      title: 'Three-Plot Structure and Intertextuality in Premam (2015)',
+      category: 'books',
+      title: 'Ancient Indian History for Civil Services & State Service Examinations: A Complete Guide with Concepts, Chronology, and Exam-Oriented Notes',
+      authors: 'Albert Francis',
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'A comprehensive examination resource covering ancient Indian history with a focus on civil service preparation.',
+      link: 'https://www.amazon.in/dp/B0F3SNBR54'
+    },
+    {
+      id: 8,
+      category: 'books',
+      title: 'Mastering the Art of Conversation: Insights from 8 Transformative TEDx Talks on Communication, Connection, and Confidence',
+      authors: 'Albert Francis',
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'Analysis and practical applications from impactful TEDx presentations on effective communication strategies.',
+      link: 'https://www.amazon.in/dp/B0F2WXF5BT'
+    },
+    {
+      id: 9,
+      category: 'books',
+      title: 'Wealth Beyond Riches: Unlock Financial Freedom with Behavioral Insights and Proven Money Rules',
+      authors: 'Albert Francis',
+      date: '2024',
+      journal: 'Amazon KDP',
+      abstract: 'A guide to achieving financial independence through behavioral psychology and established financial principles.',
+      link: 'https://www.amazon.in/dp/B0F44CLSMF'
+    },
+    {
+      id: 10,
+      category: 'analysis',
+      title: 'Premam: A Pastiche Movie – A Study on Postmodern Film Theory',
       authors: 'Albert Francis',
       date: '2023',
-      journal: 'Postmodern Film Theory Journal',
-      abstract: 'A study on Premam’s non-linear storytelling, discussing its integration of multiple life phases, intertextual references, and postmodern cinematic elements that redefine narrative traditions in Indian cinema.',
+      journal: 'Film Studies Journal',
+      abstract: 'An examination of postmodern elements in the Malayalam film Premam, analyzing its narrative structure, cultural references, and stylistic choices.',
+      link: '#'
+    },
+    {
+      id: 11,
+      category: 'analysis',
+      title: 'Critical Analysis: Impact of the Mollywood Movie Premam and Bollywood Movie 3 Idiots on Youth',
+      authors: 'Albert Francis',
+      date: '2023',
+      journal: 'Cinema & Cultural Studies',
+      abstract: 'A comparative study of two influential Indian films and their significant impact on youth culture, education perspectives, and social values.',
+      link: '#'
+    },
+    {
+      id: 12,
+      category: 'analysis',
+      title: 'Narrative and Genre Theory in Jersey (2022)',
+      authors: 'Albert Francis',
+      date: '2022',
+      journal: 'Film Analysis Quarterly',
+      abstract: 'An exploration of storytelling techniques and genre conventions in the sports drama Jersey, examining character arcs and thematic elements.',
+      link: '#'
+    },
+    {
+      id: 13,
+      category: 'analysis',
+      title: 'Social Change in the Romeo and Juliet Broadway Adaptation: A Healer for Disordered Society',
+      authors: 'Albert Francis',
+      date: '2023',
+      journal: 'Theater & Performance Review',
+      abstract: 'Analysis of how modern Broadway adaptations of Shakespeare\'s Romeo and Juliet address contemporary social issues and promote cultural healing.',
+      link: '#'
+    },
+    {
+      id: 14,
+      category: 'analysis',
+      title: 'Things Fall Apart: The Impact of Colonization on the Igbo Community',
+      authors: 'Albert Francis',
+      date: '2022',
+      journal: 'Literary Analysis Journal',
+      abstract: 'A critical examination of Chinua Achebe\'s portrayal of colonial disruption of indigenous cultures and traditional social structures.',
+      link: '#'
+    },
+    {
+      id: 15,
+      category: 'projects',
+      title: 'Leading by Influence: Impact on Faculty Culture, Academic Culture, Campus Culture, and Healthy Campus Climate',
+      authors: 'Principal Investigator: Dr. Kennedy Andrew Thomas, Co-Investigators: Dr. Fr. Varghese K J, Dr. Sangeetha R',
+      date: '2024-Present',
+      journal: 'CHRIST University Research Initiative',
+      abstract: 'An ongoing project examining leadership dynamics in higher education institutions and their influence on various aspects of campus culture.',
+      link: '#'
+    },
+    {
+      id: 16,
+      category: 'projects',
+      title: 'Production, Class Struggle, Narrative, and Reception Theories Across Genres',
+      authors: 'Albert Francis',
+      date: '2023',
+      journal: 'Media Studies Research',
+      abstract: 'An exploration of critical theory applications in media analysis, examining socioeconomic factors and audience reception across various genres.',
+      link: '#'
+    },
+    {
+      id: 17,
+      category: 'projects',
+      title: 'The Degradation of Female Characters Through Toxic Musicality in Narasimham',
+      authors: 'Albert Francis',
+      date: '2022',
+      journal: 'Gender & Media Studies',
+      abstract: 'Gender theory analysis examining the portrayal of female characters in the film Narasimham, with particular focus on musical sequences and representation.',
+      link: '#'
+    },
+    {
+      id: 18,
+      category: 'projects',
+      title: 'The Effect of OTT Platforms on the Indian Film Industry During the Pandemic',
+      authors: 'Albert Francis',
+      date: '2023',
+      journal: 'Digital Media Research',
+      abstract: 'A comparative study on how streaming platforms transformed distribution, consumption, and production patterns in Indian cinema during COVID-19.',
       link: '#'
     }
   ];
 
   const filteredItems = researchItems
-    .filter(item => activeCategory == 'all' || item.category == activeCategory)
+    .filter(item => activeCategory === 'all' || item.category === activeCategory)
     .filter(item =>
       searchQuery === '' ||
       item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -101,10 +210,9 @@ const Research: React.FC = () => {
     );
 
     const stats = {
-      papers: researchItems.filter(item => item.category === 'papers').length,
       books: researchItems.filter(item => item.category === 'books').length,
       projects: researchItems.filter(item => item.category === 'projects').length,
-      film: researchItems.filter(item => item.category === 'film').length,
+      analysis: researchItems.filter(item => item.category === 'analysis').length,
     };
 
     useEffect(() => {
@@ -112,21 +220,17 @@ const Research: React.FC = () => {
       setIsSearchActive(false);
     }, [activeCategory]);
   
-
-
-  
-  
     return (
       <PageTransition>
         <div className="container-custom py-16">
           <SectionHeading 
-            title="Research & Publications" 
-            subtitle="Exploring the intersection of AI, media studies, film analysis, and educational research."
+            title="Publications & Projects" 
+            subtitle="Exploring literature, film analysis, and educational research contributions."
           />
           
           {/* Stats Bar */}
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8"
+            className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.1 }}
@@ -139,7 +243,9 @@ const Research: React.FC = () => {
                 transition={{ duration: 0.2 }}
               >
                 <p className="text-xs uppercase text-gray-500 dark:text-gray-400 mb-1">
-                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                  {category === 'books' ? 'Books' : 
+                   category === 'projects' ? 'Projects' : 
+                   'Thematic Analysis'}
                 </p>
                 <p className="text-2xl font-bold text-primary-600 dark:text-primary-400">{count}</p>
               </motion.div>

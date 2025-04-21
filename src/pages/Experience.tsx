@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
     },
     {
       id: 'exp2',
-      date: 'January 2024 - Present',
+      date: 'July 2024 - Present',
       title: 'Guest Faculty, Department of Media Studies',
       subtitle: 'Bangalore Central Campus',
       description: 'Teaching and mentoring students in digital storytelling and media ethics while designing innovative course modules.',
@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
     },
     {
       id: 'exp3',
-      date: 'July 2024 - Present',
+      date: 'January 2024 - Present',
       title: 'Research Assistant, School of Education',
       subtitle: 'Bangalore Central Campus',
       description: 'Assisting on research projects that explore academic culture, leadership in education, and emerging teaching methodologies.',
@@ -81,22 +81,43 @@ const Experience: React.FC = () => {
       id: 'aff1',
       title: 'Member, Teacher Learning Enhancement Cell (TLEC)',
       organization: 'CHRIST (Deemed to be University)',
-      year: '2020 - Present',
+      year: '2022 - 2023',
       description: 'Contributing to educational enhancement initiatives and teacher development programs.'
     },
     {
       id: 'aff2',
       title: 'Member, Board of Studies (Digital Humanities)',
       organization: 'CHRIST (Deemed to be University)',
-      year: '2020 - Present',
+      year: '2022 - 2023',
       description: 'Participating in curriculum design and academic planning for digital humanities programs.'
     },
     {
       id: 'aff3',
       title: 'Director, MacGuffin Film Club',
       organization: 'CHRIST (Deemed to be University)',
-      year: '2023 - Present',
+      year: '2022 - 2023',
       description: 'Leading film appreciation activities and organizing screenings and discussions.'
+    },
+    {
+      id: 'aff4',
+      title: 'Coordinator, ACC Choir',
+      organization: 'CHRIST (Deemed to be University)',
+      year: '2022 - 2023',
+      description: 'Leading and coordinating choir activities, performances, and rehearsals.'
+    },
+    {
+      id: 'aff5',
+      title: 'Member Secretary, IQAC Department',
+      organization: 'CHRIST (Deemed to be University)',
+      year: '2022 - 2023',
+      description: 'Supporting quality assurance and accreditation processes for institutional development.'
+    },
+    {
+      id: 'aff6',
+      title: 'Coordinator, University Band',
+      organization: 'CHRIST (Deemed to be University)',
+      year: '2022 - 2023',
+      description: 'Managing and directing university band activities, performances, and practice sessions.'
     }
   ];
 
@@ -377,7 +398,7 @@ const Experience: React.FC = () => {
                   <Users className="w-6 h-6" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Consulting Work
+                  Internship
                 </h3>
               </motion.div>
               

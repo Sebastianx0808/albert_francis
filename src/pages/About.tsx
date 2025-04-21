@@ -76,7 +76,7 @@ const About: React.FC = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/10 transition-colors duration-200">
                   <Award className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-                  <span className="text-gray-700 dark:text-gray-300">PhD in Media Studies</span>
+                  <span className="text-gray-700 dark:text-gray-300">Pursuing doctoral research in Media Studies</span>
                 </div>
                 <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/10 transition-colors duration-200">
                   <BookOpen className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
@@ -84,12 +84,9 @@ const About: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/10 transition-colors duration-200">
                   <Briefcase className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-                  <span className="text-gray-700 dark:text-gray-300">10+ Years Experience</span>
+                  <span className="text-gray-700 dark:text-gray-300">5+ Years Experience</span>
                 </div>
-                <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/10 transition-colors duration-200">
-                  <GraduationCap className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-                  <span className="text-gray-700 dark:text-gray-300">Visiting Professor</span>
-                </div>
+        
               </div>
             </motion.div>
             
@@ -218,6 +215,7 @@ const About: React.FC = () => {
             </div>
             
             {/* Timeline Section */}
+            {/* Timeline Section */}
             <motion.div 
               className="mt-8 card bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300"
               variants={itemVariants}
@@ -231,10 +229,11 @@ const About: React.FC = () => {
               
               <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-indigo-500 before:via-amber-500 before:to-purple-500">
                 {[
-                  { year: "2023", title: "Visiting Professor", desc: "University of Creative Arts", color: "purple" },
-                  { year: "2021", title: "Published Book", desc: "Digital Media Ethics in Practice", color: "amber" },
-                  { year: "2019", title: "Exhibition Curator", desc: "International Media Arts Festival", color: "indigo" },
-                  { year: "2016", title: "PhD Completion", desc: "Media Studies & Digital Culture", color: "purple" }
+                  { year: "June 2024 - Present", title: "PhD in Media Studies", desc: "CHRIST (Deemed To Be University), Bangalore", color: "purple" },
+                  { year: "December 2022", title: "Assistant Professor", desc: "School of Arts and Humanities, CHRIST (Deemed to be University), Pune Lavasa Campus", color: "amber" },
+                  { year: "July 2022", title: "Lecturer", desc: "Department of Film and Media Studies, BVM Holy Cross College", color: "indigo" },
+                  { year: "May 2022", title: "Post Graduated", desc: "CHRIST (Deemed To Be University), Bangalore", color: "purple" },
+                  { year: "April 2020", title: "Graduated", desc: "Loyola College Chennai", color: "indigo" }
                 ].map((item, index) => (
                   <div key={index} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full bg-white border border-gray-200 dark:border-gray-700 dark:bg-gray-800 shadow-sm group-hover:shadow-md group-hover:scale-110 transition-all duration-300">
